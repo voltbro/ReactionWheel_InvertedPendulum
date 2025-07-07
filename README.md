@@ -34,8 +34,8 @@ The repository provides a seamless workflow from theory to hardware implementati
    - `Eng_Installation_guide.pdf` – software installation guide (in English)
    - `Eng_Theory.pdf` – theoretical description of the dynamics and control + practical guide for working with the hardware platform (in English)
 
-## Installation and Usage
+## Installation & Usage
 - Install all required software according to the instructions in files `Eng_Installation_guide.pdf` or `Ru_Installation_guide.pdf`
-- You can immediately flash the microcontroller with the firmware **`wheel_pendulum_practicum.ino`**
+- You can immediately flash the microcontroller with the firmware `wheel_pendulum_practicum.ino`
 - After powering the pendulum control board, wait until the motor initialization completes. Then press the **USR** button to start the control system.
 - To better understand the pendulum control theory, study files ``Eng_Theory.pdf`` or ``Ru_Theory.pdf``. These files are written as lab manuals. For deeper understanding, complete all practical tasks and answer the review questions included in the text.
