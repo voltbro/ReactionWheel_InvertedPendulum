@@ -11,6 +11,9 @@ The repository provides a seamless workflow from theory to hardware implementati
 
 [![RWIP](https://i9.ytimg.com/vi_webp/FLvGr2hywII/mq2.webp?sqp=CIyor8MG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgWihOMA8=&rs=AOn4CLCTw3LyJUpaOBZD5oiOJYqrvIp1kw)](https://youtu.be/FLvGr2hywII?si=-k68ezkW-7m0eRbZ)
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FLvGr2hywII/0.jpg)](https://youtu.be/FLvGr2hywII?si=-k68ezkW-7m0eRbZ)
+
+
 ## Key Components
 - Theoretical manual
 - Python notebook for modeling and control synthesis
