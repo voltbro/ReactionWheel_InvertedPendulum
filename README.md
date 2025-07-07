@@ -9,7 +9,7 @@ The pendulum is capable of operating in the following modes:
 
 The repository provides a seamless workflow from theory to hardware implementation. It is well-suited for control theory or robotics courses and projects, as well as for individuals interested in mastering the control of unstable systems.
 
-[![RWIP](https://img.youtube.com/vi/FLvGr2hywII?si=-k68ezkW-7m0eRbZ/0.jpg)](https://youtu.be/FLvGr2hywII?si=-k68ezkW-7m0eRbZ)
+[![RWIP](https://i9.ytimg.com/vi_webp/FLvGr2hywII/mq2.webp?sqp=CIyor8MG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgWihOMA8=&rs=AOn4CLCTw3LyJUpaOBZD5oiOJYqrvIp1kw)](https://youtu.be/FLvGr2hywII?si=-k68ezkW-7m0eRbZ)
 
 ## Key Components
 - Theoretical manual
