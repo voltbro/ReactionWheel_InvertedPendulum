@@ -41,14 +41,14 @@ The repository provides a seamless workflow from theory to hardware implementati
 ## Installation & Usage
 There are two ways for working with the Inverted Pendulum. 
 
-### The first way 
-- Install all required software according to the instructions in files `Eng_Installation_guide.pdf` or `Ru_Installation_guide.pdf`
-- You can immediately flash the microcontroller with the firmware `wheel_pendulum_practicum.ino`
-- After powering the pendulum control board, wait until the motor initialization completes. Then press the **USR** button to start the control system.
-- To better understand the pendulum control theory, study files ``Eng_Theory.pdf`` or ``Ru_Theory.pdf``. These files are written as lab manuals. For deeper understanding, complete all practical tasks and answer the review questions included in the text.
-
 ### The second way
-- Install Arduino IDE and configure it for working with [VBCore32G4](https://docs.vbcores.ru/docs/Hardware/vbcore)  according to the instructions in files `Eng_Installation_guide.pdf` or `Ru_Installation_guide.pdf`
-- Install `rwip_gui` via `rwip_gui_1.0.0_install.exe`. It is standard installation wizard. Just run it and follow the instructions on the display.
-- Flash the microcontroller with the firmware `rwip_for_gui.ino`
-- Open RWIP_GUI and use it for controlling the pendulum.
+- Install Arduino IDE and configure it for working with [VBCore32G4](https://docs.vbcores.ru/docs/Hardware/vbcore)  according to the instructions in files [Eng_Installation_guide.pdf](./Tutorials/Eng_Installation_Guide.pdf) or [Ru_Installation_guide.pdf](./Tutorials/Ru_Installation_Guide.pdf)
+- Install **RWIP_GUI** via [rwip_gui_1.0.0_install.exe](./rwip_gui/rwip_gui_1.0.0_install.exe). It is standard installation wizard. Just run it and follow the instructions on the display.
+- Flash the microcontroller with the firmware [rwip_for_gui.ino](./Firmware/rwip_for_gui/)
+- Open **RWIP_GUI** and use it for controlling the pendulum.
+
+### The first way 
+- Install all required software according to the instructions in files [Eng_Installation_guide.pdf](./Tutorials/Eng_Installation_Guide.pdf) or [Ru_Installation_guide.pdf](./Tutorials/Ru_Installation_Guide.pdf)
+- You can immediately flash the microcontroller with the firmware [wheel_pendulum_practicum.ino](./Firmware/React_wheel_pendulum_practicum/)
+- After powering the pendulum control board, wait until the motor initialization completes. Then press the **USR** button to start the control system.
+- To better understand the pendulum control theory, study files [Eng_Theory.pdf](./Tutorials/Eng_Theory.pdf) or [Ru_Theory.pdf](./Tutorials/Ru_Theory.pdf). These files are written as lab manuals. For deeper understanding, complete all practical tasks and answer the review questions included in the text.
