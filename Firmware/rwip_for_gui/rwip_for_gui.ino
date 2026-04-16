@@ -73,9 +73,9 @@ float k_mv = K_MV;
 float k_swing_up = K_SWING_UP;
 
 float M = 0.1975f;
-float l = 0.06f;
+float l = 0.088f;
 float m = 0.2545f;
-float J = M * l * l / 3.0f;
+float J = M * l * l / 12.0f;
 float Jmr = 0.0003385f;
 float g = 9.81f;
 

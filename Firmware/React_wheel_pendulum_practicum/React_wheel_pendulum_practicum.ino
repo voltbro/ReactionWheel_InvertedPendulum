@@ -38,10 +38,10 @@ float k_mv = K_MV; // reaction wheel angular velocity
 float k_swing_up = K_SWING_UP; // Coefficient for energy swing-up and braking
 
 // Physical parameters of the system
-float M = 0.1975; //0.014;      // Mass of the pendulum
-float l = 0.06;       // Length of the pendulum
-float m = 0.2545; //0.063;      // Mass of the motor + flywheel
-float J = M*l*l/3;    // Moment of inertia of the pendulum about its base
+float M = 0.1975;      // Mass of the pendulum
+float l = 0.088;       // Length of the pendulum
+float m = 0.2545;      // Mass of the motor + flywheel
+float J = M*l*l/12;    // Moment of inertia of the pendulum about its base
 float Jmr = 0.0003385;// Combined moment of inertia of motor and flywheel
 float g = 9.81;       // Gravitational acceleration
 
@@ -68,6 +68,7 @@ BLDCMotor motor = BLDCMotor(7, 12.2);
 BLDCDriver3PWM driver = BLDCDriver3PWM(PA8, PA9, PA10);
 
 void setup() {
+  Serial.begin(115200);
   Wire.setSDA(PinSDA);
   Wire.setSCL(PinSCL);
   Wire.begin();
@@ -168,6 +169,8 @@ void control(){
   // Limit control voltage
   if (u > 12) u = 12;
   else if (u < -12) u = -12;
+
+  Serial.println(motor_velocity);
   
   motor.target = -u; // Apply control voltage to the motor
 }

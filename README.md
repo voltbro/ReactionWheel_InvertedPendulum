@@ -12,17 +12,9 @@ The repository provides a seamless workflow from theory to hardware implementati
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FLvGr2hywII/0.jpg)](https://youtu.be/FLvGr2hywII?si=-k68ezkW-7m0eRbZ)
 
 ## Key Components
-- Theoretical manual
 - Python notebook for modeling and control synthesis
 - Fully functional microcontroller firmware
-
-## Covered Theoretical Topics
-- Derivation of the nonlinear model of the inverted pendulum using the Lagrange method
-- Linearization of nonlinear models
-- Discretization of continuous-time systems
-- Controllability and stability criteria
-- LQR controller synthesis
-- Energy-Shaping Control
+- Windows GUI-application
 
 ## Repository Structure
 
@@ -32,23 +24,19 @@ The repository provides a seamless workflow from theory to hardware implementati
  - `Python`
    - `model.ipynb` – pendulum models + control synthesis
  - 'rwip_gui' - Windows GUI application for working with the inverted pendulum (sending commands and plotting data)
- - `Tutorials` – guides and manuals
-   - `Ru_Installation_guide.pdf` – software installation guide (in Russian)
-   - `Ru_Theory.pdf` – theoretical description of the dynamics and control + practical guide for working with the hardware platform (in Russian)
-   - `Eng_Installation_guide.pdf` – software installation guide (in English)
-   - `Eng_Theory.pdf` – theoretical description of the dynamics and control + practical guide for working with the hardware platform (in English)
+
 
 ## Installation & Usage
 There are two ways for working with the Inverted Pendulum. 
 
 ### The second way
-- Install **Arduino IDE** and configure it for working with [VBCore32G4](https://docs.vbcores.ru/docs/Hardware/vbcore)  according to the instructions in files [Eng_Installation_guide.pdf](./Tutorials/Eng_Installation_Guide.pdf) or [Ru_Installation_guide.pdf](./Tutorials/Ru_Installation_Guide.pdf)
+- Install and configure all the neccesary software via [the instruction manual](https://edu.vbcores.ru//docs/rwip-control/preparing/windows).
 - Install **RWIP_GUI** via [rwip_gui_1.0.0_install.exe](./rwip_gui). It is standard installation wizard. Just run it and follow the instructions on the display.
 - Flash the microcontroller with the firmware [rwip_for_gui](./Firmware/rwip_for_gui/)
 - Open **RWIP_GUI** and use it for controlling the pendulum.
 
 ### The first way 
-- Install all required software according to the instructions in files [Eng_Installation_guide.pdf](./Tutorials/Eng_Installation_Guide.pdf) or [Ru_Installation_guide.pdf](./Tutorials/Ru_Installation_Guide.pdf)
+- Install and configure all the neccesary software via [the instruction manual](https://edu.vbcores.ru/docs/rwip-control/preparing/windows).
 - You can immediately flash the microcontroller with the firmware [wheel_pendulum_practicum](./Firmware/React_wheel_pendulum_practicum/)
 - After powering the pendulum control board, wait until the motor initialization completes. Then press the **USR** button to start the control system.
-- To better understand the pendulum control theory, study files [Eng_Theory.pdf](./Tutorials/Eng_Theory.pdf) or [Ru_Theory.pdf](./Tutorials/Ru_Theory.pdf). These files are written as lab manuals. For deeper understanding, complete all practical tasks and answer the review questions included in the text.
+- To better understand the pendulum control theory, learn our course [Dynamics and Control of a Reaction Wheel Inverted Pendulum](https://edu.vbcores.ru/docs/rwip-control/overview).
