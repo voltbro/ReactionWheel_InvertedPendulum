@@ -41,7 +41,7 @@ float k_swing_up = K_SWING_UP; // Coefficient for energy swing-up and braking
 float M = 0.1975;      // Mass of the pendulum
 float l = 0.088;       // Length of the pendulum
 float m = 0.2545;      // Mass of the motor + flywheel
-float J = M*l*l/12;    // Moment of inertia of the pendulum about its base
+float J = M*l*l/3;    // Moment of inertia of the pendulum about its base
 float Jmr = 0.0003385;// Combined moment of inertia of motor and flywheel
 float g = 9.81;       // Gravitational acceleration
 
