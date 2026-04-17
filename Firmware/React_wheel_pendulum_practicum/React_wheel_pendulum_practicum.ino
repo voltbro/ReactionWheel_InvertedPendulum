@@ -69,6 +69,8 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(PA8, PA9, PA10);
 
 void setup() {
   Serial.begin(115200);
+  Serial.println("start");
+
   Wire.setSDA(PinSDA);
   Wire.setSCL(PinSCL);
   Wire.begin();
@@ -89,7 +91,7 @@ void setup() {
   digitalWrite(PB13, HIGH);
 
   // Initialize motor driver using SimpleFOC
-  driver.voltage_power_supply = 16;
+  driver.voltage_power_supply = 12;
   driver.init();
   driver.enable();
   motor.linkDriver(&driver);
@@ -106,26 +108,11 @@ void setup() {
   motor.controller = MotionControlType::torque;
 
   motor.current_limit = 50;
-  motor.voltage_limit = 16;
+  motor.voltage_limit = 12;
   motor.velocity_limit = 5000; 
   motor.init();
   motor.initFOC();
   motor.target = 0;
-
-  // Check pendulum sensor connection
-  if(pendulum_sensor.detectMagnet() == 0 ){
-    while(1){
-        if(pendulum_sensor.detectMagnet() == 1 ){
-            Serial.print("Current Magnitude: ");
-            Serial.println(pendulum_sensor.getMagnitude());
-            break;
-        }
-        else{
-            Serial.println("Can not detect magnet");
-        }
-        delay(1000);
-    }
-  }
 
   offset = pendulum_sensor.getRawAngle();
   pendulum_angle = pendulum_sensor.getRawAngle() - offset;
@@ -144,6 +131,7 @@ void setup() {
   timer_foc->resume();
 
   delay(1000);
+  Serial.println("ready");
 }
 
 // Function to calculate control voltage for the motor
@@ -169,8 +157,6 @@ void control(){
   // Limit control voltage
   if (u > 12) u = 12;
   else if (u < -12) u = -12;
-
-  Serial.println(motor_velocity);
   
   motor.target = -u; // Apply control voltage to the motor
 }
